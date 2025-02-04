@@ -1,0 +1,13 @@
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Workout Type</th>
+      <th>Minutes</th>
+    </tr>
+    <tr *ngFor="let workout of workouts">
+      <td>{{ workout.name }}</td>
+      <td>{{ workout.type }}</td>
+      <td>{{ workout.minutes }}</td>
+    </tr>
+  </table>
+  

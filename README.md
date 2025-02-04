@@ -1,59 +1,91 @@
-# HealthTracker
+Health Challenge Tracker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Overview
 
-## Development server
+The Health Challenge Tracker is a single-page application (SPA) built with Angular 14+ that allows users to track their workouts by entering their name, workout type, and workout duration. The app provides a user-friendly interface with features like search, filtering, pagination, and optional charts to visualize progress.
 
-To start a local development server, run:
+Features
 
-```bash
+Add user workout entries (Name, Workout Type, Minutes)
+
+Display workouts in a tabular format
+
+Search users by name
+
+Filter workouts by type
+
+Pagination for efficient data handling
+
+Data persistence using localStorage
+
+Optional charts for workout visualization
+
+Unit tests for one component and one service with 100% coverage
+
+Responsive UI built using TailwindCSS
+
+Tech Stack
+
+Frontend: Angular 14+
+
+UI Components: Angular Material / PrimeNG
+
+Styling: TailwindCSS
+
+Data Storage: localStorage
+
+Deployment: Vercel / Netlify / GitHub Pages
+
+Installation & Setup
+
+Clone the Repository:
+
+git clone https://github.com/your-username/Health-tracker.git cd Health-tracker
+
+Install Dependencies:
+
+npm install
+
+Run the Development Server:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The app will be accessible at http://localhost:4200/
 
-## Code scaffolding
+Production Build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+To generate an optimized production build, run:
 
-```bash
-ng generate component component-name
-```
+ng build --configuration=production
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+This will create the output files in the dist/health-tracker directory.
 
-```bash
-ng generate --help
-```
+Deployment
 
-## Building
+Deploy to GitHub Pages
 
-To build the project run:
+npm install -g angular-cli-ghpages ng deploy --base-href="/Health-tracker/"
 
-```bash
-ng build
-```
+Deploy to Vercel
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+npm install -g vercel vercel
 
-## Running unit tests
+Deploy to Netlify
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+npm install -g netlify-cli netlify deploy --prod --dir=dist/health-tracker
 
-```bash
+Running Tests
+
+To run unit tests:
+
 ng test
-```
 
-## Running end-to-end tests
+To generate a coverage report:
 
-For end-to-end (e2e) testing, run:
+ng test --code-coverage
 
-```bash
-ng e2e
-```
+Folder Structure Health-tracker/ ├── src/ │ ├── app/ │ │ ├── components/ # Angular Components │ │ ├── services/ # API / Local Storage Services │ │ ├── models/ # Data Models │ │ ├── pages/ # Application Pages │ │ ├── app.module.ts # Main App Module │ │ ├── app.component.ts # Root Component │ ├── assets/ # Static Assets │ ├── styles/ # Global Styles ├── dist/ # Production Build Output ├── package.json # Project Dependencies ├── angular.json # Angular Configuration └── README.md # Project Documentation
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+For any queries, reach out at your-email@example.com or open an issue in the repository.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🚀 Developed by Manish Kumar

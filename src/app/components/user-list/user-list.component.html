@@ -1,0 +1,33 @@
+<div class="p-4">
+    <div class="mb-4 flex justify-between">
+      <input type="text" [(ngModel)]="searchTerm" placeholder="Search by name" class="border p-2 w-1/3" />
+      <input type="text" [(ngModel)]="filterType" placeholder="Filter by workout type" class="border p-2 w-1/3" />
+    </div>
+  
+    <table class="table-auto w-full border">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Workouts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of paginateData(filterUsers())">
+          <td>{{ user.name }}</td>
+          <td>
+            <ul>
+              <li *ngFor="let workout of user.workouts">
+                {{ workout.type }} - {{ workout.minutes }} minutes
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="flex justify-between mt-4">
+      <button (click)="currentPage = currentPage > 1 ? currentPage - 1 : 1" class="p-2 bg-gray-500 text-white">Prev</button>
+      <button (click)="currentPage = currentPage + 1" class="p-2 bg-gray-500 text-white">Next</button>
+    </div>
+  </div>
+  

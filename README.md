@@ -86,6 +86,6 @@ ng test --code-coverage
 
 Folder Structure Health-tracker/ ├── src/ │ ├── app/ │ │ ├── components/ # Angular Components │ │ ├── services/ # API / Local Storage Services │ │ ├── models/ # Data Models │ │ ├── pages/ # Application Pages │ │ ├── app.module.ts # Main App Module │ │ ├── app.component.ts # Root Component │ ├── assets/ # Static Assets │ ├── styles/ # Global Styles ├── dist/ # Production Build Output ├── package.json # Project Dependencies ├── angular.json # Angular Configuration └── README.md # Project Documentation
 
-For any queries, reach out at your-email@example.com or open an issue in the repository.
+For any queries, reach out at manishrajput6137m@gmail.com or open an issue in the repository.
 
 🚀 Developed by Manish Kumar
